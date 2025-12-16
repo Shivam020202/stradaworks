@@ -103,6 +103,9 @@ function initAnimations() {
   // Animate Section Titles with Split Text Effect
   const sectionTitles = document.querySelectorAll(".section-title");
   sectionTitles.forEach((title) => {
+    // Skip animation for Instagram section title
+    if (title.closest("#instagram")) return;
+
     gsap.from(title, {
       scrollTrigger: {
         trigger: title,
@@ -179,73 +182,7 @@ function initAnimations() {
     ease: "power2.out",
   });
 
-  // Premium Services Cards - 3D Flip Effect
-  const serviceCards = document.querySelectorAll(
-    ".group.relative.overflow-hidden.bg-zinc-900"
-  );
-  serviceCards.forEach((card, index) => {
-    gsap.from(card, {
-      scrollTrigger: {
-        trigger: card,
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-      y: 80,
-      opacity: 0,
-      rotationY: -15,
-      duration: 1,
-      delay: index * 0.15,
-      ease: "power3.out",
-    });
-
-    // Animate card content separately
-    const cardTitle = card.querySelector("h3");
-    const cardText = card.querySelector("p");
-    const cardList = card.querySelectorAll("li");
-
-    if (cardTitle) {
-      gsap.from(cardTitle, {
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-        },
-        x: -30,
-        opacity: 0,
-        duration: 0.8,
-        delay: index * 0.15 + 0.3,
-        ease: "power2.out",
-      });
-    }
-
-    if (cardText) {
-      gsap.from(cardText, {
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-        },
-        y: 20,
-        opacity: 0,
-        duration: 0.8,
-        delay: index * 0.15 + 0.4,
-        ease: "power2.out",
-      });
-    }
-
-    if (cardList.length > 0) {
-      gsap.from(cardList, {
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-        },
-        x: -20,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        delay: index * 0.15 + 0.5,
-        ease: "power2.out",
-      });
-    }
-  });
+  // Premium Services Cards - No animation (immediate display)
 
   // Why Choose Us Section
   const whyChooseContent = document.querySelector(
@@ -350,23 +287,7 @@ function initAnimations() {
     });
   });
 
-  // Instagram Section Animation
-  const instaCards = document.querySelectorAll(".instagram-embed");
-  instaCards.forEach((card, index) => {
-    gsap.from(card, {
-      scrollTrigger: {
-        trigger: card,
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-      y: 80,
-      opacity: 0,
-      scale: 0.9,
-      duration: 1,
-      delay: index * 0.15,
-      ease: "power3.out",
-    });
-  });
+  // Instagram Section - No animation (immediate display)
 
   // Footer Animation
   gsap.from("footer .grid > div", {
@@ -399,6 +320,9 @@ function initAnimations() {
   // Add floating animation to badges
   const badges = document.querySelectorAll(".inline-block.px-3.py-1");
   badges.forEach((badge) => {
+    // Skip animation for Instagram section badge
+    if (badge.closest("#instagram")) return;
+
     gsap.from(badge, {
       scrollTrigger: {
         trigger: badge,
