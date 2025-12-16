@@ -59,35 +59,37 @@ window.addEventListener("load", () => {
   }
 });
 
-// Initialize Swiper
-const swiper = new Swiper(".hero-swiper", {
-  loop: true,
-  effect: "fade",
-  speed: 1000,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next-custom",
-    prevEl: ".swiper-button-prev-custom",
-  },
-  on: {
-    slideChangeTransitionStart: function () {
-      // Reset animations for next slide
-      gsap.set(".swiper-slide-active .hero-text", { y: 50, opacity: 0 });
+// Initialize Swiper (Only if element exists)
+if (document.querySelector(".hero-swiper")) {
+  const swiper = new Swiper(".hero-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 1000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-    slideChangeTransitionEnd: function () {
-      // Animate text in active slide
-      gsap.to(".swiper-slide-active .hero-text", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-      });
+    navigation: {
+      nextEl: ".swiper-button-next-custom",
+      prevEl: ".swiper-button-prev-custom",
     },
-  },
-});
+    on: {
+      slideChangeTransitionStart: function () {
+        // Reset animations for next slide
+        gsap.set(".swiper-slide-active .hero-text", { y: 50, opacity: 0 });
+      },
+      slideChangeTransitionEnd: function () {
+        // Animate text in active slide
+        gsap.to(".swiper-slide-active .hero-text", {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+        });
+      },
+    },
+  });
+}
 
 function initAnimations() {
   // Initial Hero Text Animation

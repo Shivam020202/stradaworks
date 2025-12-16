@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stradaworks | Premium Garage Services</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Stradaworks - Premium garage services, detailing, and modifications. Experience the art of automotive care.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: {
+              500: '#ff0000',
+              600: '#cc0000',
+              900: '#8a0000',
+            },
+            black: '#050505',
+            zinc: {
+              900: '#111',
+              800: '#1a1a1a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Rajdhani', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-red-500 selection:text-white">
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor-follower hidden md:block"></div>
+
+  <!-- Intro Loader -->
+  <!-- <div id="loader" class="fixed inset-0 bg-black z-[10000] flex items-center justify-center overflow-hidden">
+    <div class="flex flex-col items-center">
+      <h1
+        class="text-6xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white tracking-widest animate-pulse">
+        STRADAWORKS</h1>
+      <div class="w-full h-1 bg-zinc-800 mt-4 overflow-hidden">
+        <div class="h-full bg-red-600 animate-[width_1s_ease-in-out_forwards]" style="width: 100%"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 glass-panel border-b-0 border-white/5">
+    <div class="max-w-[1400px] mx-auto px-6 h-20 flex justify-between items-center">
+      <a href="#" class="text-3xl font-display font-bold italic tracking-tighter">
+        <span class="text-white">STRADA</span><span class="text-red-500">WORKS</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services"
+          class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Services</a>
+        <a href="#work"
+          class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Work</a>
+        <a href="#gallery"
+          class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Gallery</a>
+        <a href="#instagram"
+          class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Instagram</a>
+        <a href="#contact"
+          class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-display uppercase tracking-widest text-sm transition-all hover:skew-x-[-10deg]">Book
+          Now</a>
+      </div>
+
+      <button class="md:hidden text-2xl text-white">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Slider Section -->
+  <header class="relative w-full h-[650px] overflow-hidden pt-20"> <!-- Compact Height -->
+    <div class="swiper hero-swiper w-full h-full">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative">
+          <!-- Background -->
+          <div class="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1677739455846-2467604ea8b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full h-full object-cover" alt="Hero 1">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          </div>
+
+          <!-- Content (Left Aligned) -->
+          <div
+            class="relative z-10 w-full h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center items-start text-left">
+            <div class="hero-text">
+              <div
+                class="inline-block px-3 py-1 mb-6 border border-red-500/30 bg-red-500/10 text-red-500 text-xs font-display uppercase tracking-[0.2em] backdrop-blur-sm">
+                Premium Automotive Care
+              </div>
+              <h1 class="text-6xl md:text-8xl font-display font-bold leading-[0.9] uppercase mb-6">
+                Precision <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Engineering</span>
+              </h1>
+              <p class="text-zinc-400 max-w-lg text-lg leading-relaxed mb-8">
+                Where masterful mechanics meet modern technology. Experience the ultimate in vehicle performance and
+                detailing.
+              </p>
+              <a href="#services"
+                class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-display font-bold uppercase tracking-widest hover:bg-zinc-200 transition-colors">
+                <span>Explore Services</span>
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative">
+          <!-- Background -->
+          <div class="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1638247304344-3126403e56bb?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full h-full object-cover" alt="Hero 2">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          </div>
+
+          <!-- Content -->
+          <div
+            class="relative z-10 w-full h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center items-start text-left">
+            <div class="hero-text">
+              <div
+                class="inline-block px-3 py-1 mb-6 border border-white/30 bg-white/10 text-white text-xs font-display uppercase tracking-[0.2em] backdrop-blur-sm">
+                Restoration & Detailing
+              </div>
+              <h1 class="text-6xl md:text-8xl font-display font-bold leading-[0.9] uppercase mb-6">
+                Art of <br>
+                <span class="text-white">Detailing</span>
+              </h1>
+              <p class="text-zinc-400 max-w-lg text-lg leading-relaxed mb-8">
+                Restore your vehicle to showroom condition with our comprehensive paint correction and ceramic coating
+                packages.
+              </p>
+              <a href="#work"
+                class="group relative inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white font-display font-bold uppercase tracking-widest hover:bg-red-700 transition-colors">
+                <span>View Gallery</span>
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="absolute bottom-10 right-10 z-20 flex gap-4">
+        <div
+          class="swiper-button-prev-custom w-12 h-12 border border-zinc-700 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-colors cursor-pointer text-white">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div
+          class="swiper-button-next-custom w-12 h-12 border border-zinc-700 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-colors cursor-pointer text-white">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Grid -->
+  <section id="services" class="py-24 bg-black relative">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <h2 class="section-title text-white">Our Expertise</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-zinc-800">
+        <!-- Service 1 -->
+        <div
+          class="group relative p-10 border-r border-b border-zinc-800 bg-zinc-900/30 hover:bg-red-600 transition-colors duration-500">
+          <div class="mb-6 text-4xl text-red-500 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Performance Tuning</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            ECU remapping, turbo upgrades, and exhaust systems to unlock your vehicle's true potential.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div
+          class="group relative p-10 border-r border-b border-zinc-800 bg-zinc-900/30 hover:bg-white transition-colors duration-500">
+          <div class="mb-6 text-4xl text-white group-hover:text-black transition-colors">
+            <i class="fa-solid fa-spray-can"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Premier Detailing</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            Ceramic coating, paint correction, and interior restoration for a showroom finish.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div
+          class="group relative p-10 border-b border-zinc-800 bg-zinc-900/30 hover:bg-red-600 transition-colors duration-500">
+          <div class="mb-6 text-4xl text-red-500 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-oil-can"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Routine Maintenance</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            Oil changes, brake services, and diagnostics performed with surgical precision.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div
+          class="group relative p-10 border-r border-zinc-800 bg-zinc-900/30 hover:bg-white transition-colors duration-500">
+          <div class="mb-6 text-4xl text-white group-hover:text-black transition-colors">
+            <i class="fa-solid fa-car-burst"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Body Modifications</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            Widebody kits, spoilers, and aesthetic upgrades installed by experts.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div
+          class="group relative p-10 border-r border-zinc-800 bg-zinc-900/30 hover:bg-red-600 transition-colors duration-500">
+          <div class="mb-6 text-4xl text-red-500 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Diagnostics</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            Advanced computer diagnostics to pinpoint issues accurately and quickly.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="group relative p-10 border-zinc-800 bg-zinc-900/30 hover:bg-white transition-colors duration-500">
+          <div class="mb-6 text-4xl text-white group-hover:text-black transition-colors">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-black transition-colors">Protection Films</h3>
+          <p class="text-zinc-500 group-hover:text-black/80 transition-colors">
+            PPF installation to protect your investment from road debris and scratches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Samples / Gallery Slider -->
+  <section id="work" class="py-24 bg-zinc-900 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto px-6 mb-12 flex justify-between items-end">
+      <h2 class="section-title border-white text-white">Recent Works</h2>
+      <div class="flex gap-4">
+        <button id="prevWork"
+          class="w-12 h-12 border border-zinc-700 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-all text-white"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button id="nextWork"
+          class="w-12 h-12 border border-zinc-700 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-all text-white"><i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Scroller Container -->
+    <div class="flex gap-6 px-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-10" id="workScroller">
+      <!-- Item 1 -->
+      <div
+        class="snap-center shrink-0 w-[400px] md:w-[600px] h-[400px] relative group overflow-hidden border border-zinc-800">
+        <img
+          src="https://images.unsplash.com/photo-1613921568536-555645be4032?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Work 1">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+          <span class="text-red-500 font-display uppercase tracking-widest text-sm mb-2 block">Restoration</span>
+          <h3 class="text-3xl font-bold text-white uppercase">Classic Porsche 911</h3>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div
+        class="snap-center shrink-0 w-[400px] md:w-[600px] h-[400px] relative group overflow-hidden border border-zinc-800">
+        <img
+          src="https://images.unsplash.com/photo-1611312752514-9439fdba223d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Work 2">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+          <span class="text-red-500 font-display uppercase tracking-widest text-sm mb-2 block">Custom Wrap</span>
+          <h3 class="text-3xl font-bold text-white uppercase">Nissan R34</h3>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div
+        class="snap-center shrink-0 w-[400px] md:w-[600px] h-[400px] relative group overflow-hidden border border-zinc-800">
+        <img
+          src="https://images.unsplash.com/photo-1627008119017-f89d9704a799?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Work 3">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+          <span class="text-red-500 font-display uppercase tracking-widest text-sm mb-2 block">Performance</span>
+          <h3 class="text-3xl font-bold text-white uppercase">Supra Tuning Stage 2</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Gallery Grid (Masonry feel) -->
+  <section id="gallery" class="py-24 bg-zinc-950">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <h2 class="section-title text-white">The Garage Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 h-[600px]">
+        <div class="col-span-2 row-span-2 relative group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1000"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+            alt="Gallery 1">
+          <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+        <div class="col-span-1 row-span-1 relative group overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1607893464976-60e47bfe49f5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+            alt="Gallery 2">
+          <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+        <div class="col-span-1 row-span-1 relative group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=1000"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+            alt="Gallery 3">
+          <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+        <div class="col-span-1 row-span-1 relative group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=1000"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+            alt="Gallery 4">
+          <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+        <div class="col-span-1 row-span-1 relative group overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=1000"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+            alt="Gallery 5">
+          <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Premium Services Showcase Section -->
+  <section class="py-32 bg-black relative border-t border-zinc-900">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent">
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+      <div class="text-center mb-20">
+        <div
+          class="inline-block px-3 py-1 mb-6 border border-red-500/30 bg-red-500/10 text-red-500 text-xs font-display uppercase tracking-[0.2em] backdrop-blur-sm">
+          Premium Services
+        </div>
+        <h2 class="text-5xl md:text-7xl font-display font-bold text-white uppercase mb-6">
+          Experience <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Excellence</span>
+        </h2>
+        <p class="text-zinc-400 text-lg max-w-2xl mx-auto">
+          Transform your vehicle with our comprehensive range of premium detailing, protection, and performance services
+        </p>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Service 1: Paint Correction -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="Paint Correction">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-paint-roller text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              Paint Correction
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              Multi-stage paint correction process removes swirl marks, scratches, and oxidation to restore your
+              vehicle's finish to showroom condition.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Swirl mark removal</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Scratch elimination</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>High-gloss finish</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Ceramic Coating -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="Ceramic Coating">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              Ceramic Coating
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              9H hardness nano-ceramic coating provides long-lasting protection against UV rays, chemicals, and
+              environmental contaminants for up to 5 years.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>9H surface hardness</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Hydrophobic properties</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>5-year protection</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: PPF Installation -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="PPF Installation">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-layer-group text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              PPF Installation
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              Premium paint protection film shields your vehicle from rock chips, scratches, and road debris while
+              maintaining the original paint's brilliance.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Self-healing technology</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Invisible protection</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>10-year warranty</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Interior Detailing -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600880291319-2dd25f9fdc4d?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="Interior Detailing">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-couch text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              Interior Detailing
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              Complete interior restoration including leather conditioning, fabric treatment, deep cleaning, and odor
+              elimination for a pristine cabin experience.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Leather conditioning</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Steam cleaning</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Odor elimination</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Engine Bay Detailing -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="Engine Bay Detailing">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-engine text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              Engine Bay Detailing
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              Professional engine bay cleaning and dressing removes grease, grime, and contaminants while protecting
+              sensitive components and enhancing aesthetics.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Degreasing treatment</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Component protection</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Dressing application</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Wheel & Tire Care -->
+        <div
+          class="group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-500">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              alt="Wheel Care">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <div class="w-12 h-12 bg-red-600 flex items-center justify-center">
+                <i class="fa-solid fa-circle-notch text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3
+              class="text-2xl font-display font-bold text-white uppercase mb-4 group-hover:text-red-500 transition-colors">
+              Wheel & Tire Care
+            </h3>
+            <p class="text-zinc-400 leading-relaxed mb-6">
+              Specialized wheel cleaning, ceramic coating, and tire dressing services that protect and enhance the
+              appearance of your wheels and tires.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Brake dust removal</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Wheel coating</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm text-zinc-500">
+                <i class="fa-solid fa-check text-red-500"></i>
+                <span>Tire shine</span>
+              </li>
+            </ul>
+            <a href="#contact"
+              class="inline-flex items-center gap-2 text-red-500 font-display uppercase text-sm tracking-widest hover:gap-4 transition-all">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Stradaworks Section -->
+  <section class="py-24 bg-zinc-950 border-t border-zinc-900">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+        <!-- Left: Content -->
+        <div class="space-y-8">
+          <div
+            class="inline-block px-3 py-1 border border-red-500/30 bg-red-500/10 text-red-500 text-xs font-display uppercase tracking-[0.2em] backdrop-blur-sm">
+            Why Choose Us
+          </div>
+          <h2 class="text-5xl md:text-6xl font-display font-bold text-white uppercase leading-tight">
+            The Stradaworks <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Difference</span>
+          </h2>
+          <p class="text-zinc-400 text-lg leading-relaxed">
+            We're not just another garage. We're automotive artisans obsessed with perfection, equipped with
+            cutting-edge technology, and driven by a passion for excellence that shows in every detail.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-zinc-900 p-6 border-l-4 border-red-600">
+              <div class="text-4xl font-bold text-white mb-2">500+</div>
+              <div class="text-sm text-zinc-500 uppercase tracking-widest">Vehicles Detailed</div>
+            </div>
+            <div class="bg-zinc-900 p-6 border-l-4 border-red-600">
+              <div class="text-4xl font-bold text-white mb-2">100%</div>
+              <div class="text-sm text-zinc-500 uppercase tracking-widest">Satisfaction Rate</div>
+            </div>
+            <div class="bg-zinc-900 p-6 border-l-4 border-red-600">
+              <div class="text-4xl font-bold text-white mb-2">15+</div>
+              <div class="text-sm text-zinc-500 uppercase tracking-widest">Years Experience</div>
+            </div>
+            <div class="bg-zinc-900 p-6 border-l-4 border-red-600">
+              <div class="text-4xl font-bold text-white mb-2">24/7</div>
+              <div class="text-sm text-zinc-500 uppercase tracking-widest">Customer Support</div>
+            </div>
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a href="#contact"
+              class="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-display uppercase tracking-widest text-sm transition-all hover:skew-x-[-5deg]">
+              Book Consultation
+            </a>
+            <a href="#services"
+              class="px-8 py-4 border border-zinc-700 hover:border-white text-white font-display uppercase tracking-widest text-sm transition-all hover:skew-x-[-5deg]">
+              View Services
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Image Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="relative h-64 overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Detail 1">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
+            </div>
+            <div class="relative h-80 overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Detail 2">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
+            </div>
+          </div>
+          <div class="space-y-4 mt-12">
+            <div class="relative h-80 overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Detail 3">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
+            </div>
+            <div class="relative h-64 overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1600880291319-2dd25f9fdc4d?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Detail 4">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Section 6: Trusted Brands Marquee -->
+  <section class="py-12 bg-zinc-950 border-y border-zinc-900 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto px-6 mb-8 text-center">
+      <span class="text-zinc-500 text-xs font-display uppercase tracking-[0.2em]">Trusted By Owners Of</span>
+    </div>
+
+    <!-- Marquee Container -->
+    <div class="relative flex overflow-x-hidden group">
+      <div class="animate-marquee whitespace-nowrap flex gap-24 items-center pr-24">
+        <!-- Set 1 -->
+        <i class="fa-brands fa-bmw text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i
+          class="fa-brands fa-fort-awesome text-6xl text-zinc-800 hover:text-blue-500 transition-colors duration-300"></i>
+        <i class="fa-brands fa-honda text-6xl text-zinc-800 hover:text-red-600 transition-colors duration-300"></i>
+        <i class="fa-brands fa-toyota text-6xl text-zinc-800 hover:text-red-600 transition-colors duration-300"></i>
+        <i class="fa-solid fa-car-side text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i class="fa-brands fa-audi text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i
+          class="fa-solid fa-certificate text-6xl text-zinc-800 hover:text-blue-800 transition-colors duration-300"></i>
+
+        <!-- Set 2 (Duplicate for smooth loop) -->
+        <i class="fa-brands fa-bmw text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i
+          class="fa-brands fa-fort-awesome text-6xl text-zinc-800 hover:text-blue-500 transition-colors duration-300"></i>
+        <i class="fa-brands fa-honda text-6xl text-zinc-800 hover:text-red-600 transition-colors duration-300"></i>
+        <i class="fa-brands fa-toyota text-6xl text-zinc-800 hover:text-red-600 transition-colors duration-300"></i>
+        <i class="fa-solid fa-car-side text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i class="fa-brands fa-audi text-6xl text-zinc-800 hover:text-white transition-colors duration-300"></i>
+        <i
+          class="fa-solid fa-certificate text-6xl text-zinc-800 hover:text-blue-800 transition-colors duration-300"></i>
+      </div>
+
+      <!-- Vignette -->
+      <div class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-black to-transparent pointer-events-none">
+      </div>
+      <div class="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-black to-transparent pointer-events-none">
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Reels Section -->
+  <section id="instagram" class="py-32 bg-black relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-900/5 via-transparent to-transparent">
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-3 py-1 mb-6 border border-red-500/30 bg-red-500/10 text-red-500 text-xs font-display uppercase tracking-[0.2em] backdrop-blur-sm">
+          Follow Our Journey
+        </div>
+        <h2 class="section-title text-5xl md:text-7xl font-display font-bold text-white uppercase mb-6 border-0 pl-0">
+          From The <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Garage</span>
+        </h2>
+        <p class="text-zinc-400 text-lg max-w-2xl mx-auto mb-8">
+          Check out our latest builds, detailing sessions, and behind-the-scenes action on Instagram
+        </p>
+        <a href="https://instagram.com" target="_blank"
+          class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-display uppercase tracking-widest text-sm transition-all hover:scale-105">
+          <i class="fa-brands fa-instagram text-xl"></i>
+          <span>Follow @Stradaworks</span>
+        </a>
+      </div>
+
+      <!-- Instagram Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Instagram Embed Card 1 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_1_1765869655187.png"
+              class="w-full h-full object-cover" alt="Latest Build">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Latest Build</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 2 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_2_1765869683412.png"
+              class="w-full h-full object-cover" alt="Detailing Magic">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Detailing Magic</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 3 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_3_1765869707546.png"
+              class="w-full h-full object-cover" alt="Behind The Scenes">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Behind The Scenes</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 4 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_4_1765869729221.png"
+              class="w-full h-full object-cover" alt="Performance Tune">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Performance Tune</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 5 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_5_1765869748055.png"
+              class="w-full h-full object-cover" alt="Custom Wraps">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Custom Wraps</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 6 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_6_1765869768325.png"
+              class="w-full h-full object-cover" alt="Restoration Project">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Restoration Project</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 7 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_7_1765869790375.png"
+              class="w-full h-full object-cover" alt="Supercar Showcase">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Supercar Showcase</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Embed Card 8 -->
+        <div
+          class="instagram-embed group relative bg-zinc-900 border border-zinc-800 hover:border-red-600 overflow-hidden transition-all duration-500"
+          data-instagram-url="https://www.instagram.com/p/C0JlZuQPxXX/embed">
+          <div class="instagram-thumbnail-container relative aspect-[9/16] overflow-hidden bg-zinc-950 cursor-pointer">
+            <img
+              src="C:/Users/charl/.gemini/antigravity/brain/6da9b0cd-38b1-4b89-828e-0a5b3e1672a2/instagram_thumbnail_8_1765869818771.png"
+              class="w-full h-full object-cover" alt="Wheel Detailing">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div class="play-button absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play text-white text-2xl ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-zinc-900/50 backdrop-blur-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-zinc-400 text-sm font-display uppercase tracking-widest">Wheel Detailing</span>
+              <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Social Proof Carousel -->
+  <section id="reviews" class="py-24 bg-zinc-950 relative">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-zinc-900 border border-zinc-800 p-8 hover:border-red-600 transition-colors group cursor-default">
+          <div class="flex gap-1 mb-6 text-yellow-500 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p
+            class="text-zinc-300 italic font-serif mb-8 text-lg leading-relaxed group-hover:text-white transition-colors">
+            "The transparency is unmatched. Getting a video report of the inspection completely changed my perspective
+            on mechanic visits. Honest work."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-zinc-500 font-bold">SM</div>
+            <div>
+              <span class="block text-white font-bold uppercase text-sm tracking-wider">Sarah M.</span>
+              <span class="block text-red-500 text-xs uppercase tracking-widest">Honda Civic Type R</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-zinc-900 border border-zinc-800 p-8 hover:border-red-600 transition-colors group cursor-default">
+          <div class="flex gap-1 mb-6 text-yellow-500 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p
+            class="text-zinc-300 italic font-serif mb-8 text-lg leading-relaxed group-hover:text-white transition-colors">
+            "Stradaworks transformed my M4. The attention to detail in the body modifications and the ECU tune is
+            world-class. Highly recommended."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-zinc-500 font-bold">DJ</div>
+            <div>
+              <span class="block text-white font-bold uppercase text-sm tracking-wider">David J.</span>
+              <span class="block text-red-500 text-xs uppercase tracking-widest">BMW M4 Comp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-zinc-900 border border-zinc-800 p-8 hover:border-red-600 transition-colors group cursor-default">
+          <div class="flex gap-1 mb-6 text-yellow-500 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p
+            class="text-zinc-300 italic font-serif mb-8 text-lg leading-relaxed group-hover:text-white transition-colors">
+            "Finally a garage that respects the car as much as I do. The team is professional, the shop is spotless, and
+            the results speak for themselves."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-zinc-500 font-bold">KL</div>
+            <div>
+              <span class="block text-white font-bold uppercase text-sm tracking-wider">Ken L.</span>
+              <span class="block text-red-500 text-xs uppercase tracking-widest">Porsche 911 GT3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-black pt-24 pb-10 border-t border-zinc-900">
+    <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="col-span-1 md:col-span-2">
+        <a href="#" class="text-4xl font-display font-bold italic tracking-tighter block mb-6">
+          <span class="text-white">STRADA</span><span class="text-red-500">WORKS</span>
+        </a>
+        <p class="text-zinc-500 max-w-sm mb-6">
+          Elevating automotive culture through precision engineering and artistic detailing. We build dreams, one part
+          at a time.
+        </p>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-10 h-10 bg-zinc-900 flex items-center justify-center text-white hover:bg-red-600 transition-colors"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="#"
+            class="w-10 h-10 bg-zinc-900 flex items-center justify-center text-white hover:bg-red-600 transition-colors"><i
+              class="fa-brands fa-twitter"></i></a>
+          <a href="#"
+            class="w-10 h-10 bg-zinc-900 flex items-center justify-center text-white hover:bg-red-600 transition-colors"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white font-display uppercase tracking-widest mb-6 border-l-2 border-red-500 pl-3">Contact</h4>
+        <ul class="space-y-4 text-zinc-500">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-red-500"></i> 1234 Speedway Blvd,
+            Garage City</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-red-500"></i> +1 (555) 000-RACE</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-red-500"></i> hello@stradaworks.com
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-display uppercase tracking-widest mb-6 border-l-2 border-red-500 pl-3">Hours</h4>
+        <ul class="space-y-2 text-zinc-500">
+          <li class="flex justify-between"><span>Mon - Fri</span> <span class="text-white">09:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>Saturday</span> <span class="text-white">10:00 - 15:00</span></li>
+          <li class="flex justify-between"><span>Sunday</span> <span class="text-red-500">Closed</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="max-w-[1400px] mx-auto px-6 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-sm">
+      <p>&copy; 2024 Stradaworks. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- GSAP for Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
